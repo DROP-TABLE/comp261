@@ -1,0 +1,34 @@
+Assignment 3 Report - 3D Renderer
+
+
+
+What the code does and does not do:
+
+All features were implemented. The polygons are rendered correctly, rotation and translation are implemented, objects are scaled to fit inside the window, additional light sources can be added and Gouraud shading is implemented.
+Additionally, mouse support for rotation, translation and zooming is included.
+
+
+Describe any bugs that you have not been able to resolve:
+
+There are no known bugs in the code and the program appears to work correctly.
+
+
+Describe how you tested that your program worked:
+
+The program was tested through rendering the example files and comparing them to the provided images.  This allowed easy identification of areas where the renderer program was not behaving correctly.  
+
+Describe any of the extensions you did and discuss the results:
+
+The extensions i implemented were:
+	Multiple light source support
+	Gouraud Shading
+	Mouse input support
+
+The multiple light sources were implemented by storing a set of light source vectors. To render the effects of these light sources, the set was iterated through, adding the effects of each to the total effect of the light sources. Light sources could be added through the relevant button.  When added a light source will be positioned at the current positin of the camera.
+
+The gouraud shading was implemented without any issues.  Since the shading did not seem to have a positive effect on all models(eg the car), a button to toggle the effect was included.
+
+Mouse input support was implemented in order to make it easier to test and view the models in the renderer.  To rotate, click and drag with the left mouse button. To translate, click and drag with the right mouse button. To zoom, use the scroll wheel.
+I found this feature to be very convienent when testing as it allowed me to easier manipulate the images in oder to see that parts i was examining.  One issue with this feature was that on models with high polygon counts, the navigation was slow and delayed, as the computer could not render the model quickly enough to allow for smooth movement.
+
+Daniel Little		300305136

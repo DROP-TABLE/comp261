@@ -1,0 +1,8 @@
+
+
+
+
+Road detail datastructure:
+		needs to store roads, road segment and intersections, where a road segment is a piece of road tghat connects two intersections.
+		Must include a graph of the network, but also needs to store info about the roads.
+
